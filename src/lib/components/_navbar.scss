@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+@use "../utilities/colors" as clr;
+
+%flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.navbar {
+    @extend %flex-layout;
+    padding: $base-padding $base-padding * 2;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+
+    .site-title {
+        font-size: large;
+    }
+
+    .container {
+        @extend %flex-layout;
+    }
+}
+
+@each $key, $val in clr.$colors {
+    .navbar-#{$key} {
+        @extend .navbar;
+        background-color: $val;
+    }
+}

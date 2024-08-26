@@ -1,0 +1,26 @@
+@use "../utilities/border" as b;
+@use "../abstracts/variables" as *;
+@use "sass:math";
+
+.card {
+    display: block;
+
+    padding:  $base-padding;
+    border: b.$base-border-thickness solid #ddd;
+    box-shadow: $base-box-shadow;
+    border-radius: math.div(b.$base-border-radius, 4);
+
+    .card-title {
+        font-size: $font-size-lg;
+        padding-bottom: $base-padding;
+        font-weight: bold;
+    }
+
+    .card-body {
+        font-size: $base-font-size;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}

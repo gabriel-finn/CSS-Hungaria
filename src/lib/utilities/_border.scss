@@ -1,0 +1,39 @@
+@use "sass:math";
+
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+$base-margin: .75rem;
+
+$base-padding: 0.75rem;
+
+$util: (
+    "border-radius": (
+    "prefix": "br",
+    "values": (
+      "default": $base-border-radius,
+      "none": 0,
+      "xs": math.div($base-border-radius, 4),
+      "sm": math.div($base-border-radius, 2),
+      "lg": $base-border-radius * 2,
+      "full": 50%,
+    )
+  )
+);
+
+@each $property, $map in $util {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $k, $v in $values {
+        @if($k == "default") {
+            .#{$prefix} {
+                #{$property}: $v;
+            }
+        } @else {
+            .#{$prefix}-#{$k} {
+                #{$property}: $v;
+            }
+        }
+    }
+}

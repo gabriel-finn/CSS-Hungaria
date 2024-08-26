@@ -1,0 +1,29 @@
+$util: (
+    "display": (
+    "prefix": "display",
+    "values": (
+      "n": none,
+      "b": block,
+      "f": flex,
+      "i": inline,
+      "i-b": inline-block
+    )
+  )
+);
+
+@each $property, $map in $util {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $k, $v in $values {
+        @if($k == "default") {
+            .#{$prefix} {
+                #{$property}: $v;
+            }
+        } @else {
+            .#{$prefix}-#{$k} {
+                #{$property}: $v;
+            }
+        }
+    }
+}

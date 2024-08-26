@@ -1,0 +1,23 @@
+{
+    "liveSassCompile.settings.compileOnWatch": false,
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/src/export",
+            "savePathReplacementPairs": null
+        },
+        {
+            "format": "compressed",
+            "extensionName": "-min.css",
+            "savePath": "/src/export/min",
+            "savePathReplacementPairs": null,
+            "generateMap": false
+        }
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+
+}
