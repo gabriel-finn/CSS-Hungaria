@@ -1,10 +1,48 @@
 $base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 
+
+//grid
+$grid-columns: 12;
+$grid-gaps: (
+    "0": 0,
+    "1": 10px,
+    "2": 20px,
+    "3": 30px,
+);
+
+//spacing
 $base-margin: .75rem;
 $base-padding: 0.75rem;
 
+
+//typography
 $base-font-size: 1rem;
 $font-size-sm: $base-font-size * 0.75;
 $font-size-lg: $base-font-size * 1.5;
 $font-size-xl: $base-font-size * 2;
 $font-size-xxl: $base-font-size * 3;
+
+
+
+//colors
+$white:      #ffffff;
+$black:      #000000;
+$light:      #ece1df;
+$dark:       #2f3265;
+$primary:    #0f43a4;
+$secondary:  #3675fb;
+$accent1:    #b05a2a;
+$accent2:    #cd934d;
+$accent3:    #dbbba4;
+$info:       #2788d9;
+$success:    #0bb167;
+$warning:    #e6cf0a;
+$danger:     #f71b03;
+$error:      #7c001ffb;
+$blue:       #1919e6;
+$red:        #e61919;
+$yellow:     #e6e619;
+$green:      #19e635;
+$orange:     #ffa600;
+$purple:     #9900ff;
+$gray:       #808080; 
