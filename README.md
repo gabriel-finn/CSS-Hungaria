@@ -1,3 +1,3 @@
 # CSS Hungaria
 
-A simple work-in-progress CSS library is use regularly.
+A simple work-in-progress CSS library I use regularly.
