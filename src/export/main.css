@@ -6252,6 +6252,14 @@ img {
   margin-bottom: 6rem;
 }
 
+.mb-6 {
+  margin-bottom: 7.5rem;
+}
+
+.mb-7 {
+  margin-bottom: 9rem;
+}
+
 .o-10 {
   opacity: 0.1;
 }

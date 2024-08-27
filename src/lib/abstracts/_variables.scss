@@ -1,5 +1,5 @@
+//box shadow
 $base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-
 
 //grid
 $grid-columns: 12;
@@ -9,6 +9,13 @@ $grid-gaps: (
     "2": 20px,
     "3": 30px,
 );
+
+//container
+$container-width: 100%;
+$container-max-width: 1200px;
+$container-margin: 0 auto;
+$container-padding: 0 20px;
+$container-box-sizing: border-box;
 
 //spacing
 $base-margin: .75rem;
