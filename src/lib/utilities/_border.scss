@@ -1,21 +1,15 @@
 @use "sass:math";
-
-$base-border-thickness: 1px;
-$base-border-radius: 20px;
-
-$base-margin: .75rem;
-
-$base-padding: 0.75rem;
+@use "../abstracts/variables" as var;
 
 $util: (
     "border-radius": (
     "prefix": "br",
     "values": (
-      "default": $base-border-radius,
+      "default": var.$base-border-radius,
       "none": 0,
-      "xs": math.div($base-border-radius, 4),
-      "sm": math.div($base-border-radius, 2),
-      "lg": $base-border-radius * 2,
+      "xs": math.div(var.$base-border-radius, 4),
+      "sm": math.div(var.$base-border-radius, 2),
+      "lg": var.$base-border-radius * 2,
       "full": 50%,
     )
   )

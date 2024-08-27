@@ -4978,6 +4978,25 @@ img {
   background-color: #0d0d0d;
 }
 
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card .card-title {
+  font-size: 1.5rem;
+  padding-bottom: 0.75rem;
+  font-weight: bold;
+}
+.card .card-body {
+  font-size: 1rem;
+}
+.card .card-body a {
+  text-decoration: underline;
+}
+
 .br {
   border-radius: 20px;
 }
@@ -5000,25 +5019,6 @@ img {
 
 .br-full {
   border-radius: 50%;
-}
-
-.card {
-  display: block;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.card .card-title {
-  font-size: 1.5rem;
-  padding-bottom: 0.75rem;
-  font-weight: bold;
-}
-.card .card-body {
-  font-size: 1rem;
-}
-.card .card-body a {
-  text-decoration: underline;
 }
 
 .btn {

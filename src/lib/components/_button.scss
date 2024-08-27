@@ -1,5 +1,5 @@
 @use "../utilities/colors" as clr;
-@use "../abstracts/variables" as *;
+@use "../abstracts/variables" as var;
 @use "../utilities/border" as b;
 @use "../abstracts/functions" as f;
 
@@ -8,8 +8,8 @@
     cursor: pointer;
     display: inline-block;
     border: 0;
-    padding: $base-padding $base-padding * 2;
-    border-radius: b.$base-border-radius;
+    padding: var.$base-padding var.$base-padding * 2;
+    border-radius: var.$base-border-radius;
     background-color: $bg-clr;
 }
 
@@ -27,7 +27,7 @@
 
     .btn-outlined-#{$key}{
         @include btn(#fff);
-        border: b.$base-border-thickness solid $val;
+        border: var.$base-border-thickness solid $val;
 
         &:hover {
             background-color: $val;
