@@ -1,2 +1,3 @@
 # CSS Hungaria
- CSS libary to make the ceation of client sites easier.
+
+A simple work-in-progress CSS library is use regularly.
