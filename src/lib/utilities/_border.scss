@@ -9,6 +9,7 @@ $util: (
       "none": 0,
       "xs": math.div(var.$base-border-radius, 4),
       "sm": math.div(var.$base-border-radius, 2),
+      "md": var.$base-border-radius * 1,
       "lg": var.$base-border-radius * 2,
       "full": 50%,
     )

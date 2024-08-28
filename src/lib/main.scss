@@ -3,6 +3,7 @@
 @use "abstracts/variables";
 
 //base + layout
+@use "base/reset";
 @use "base/base";
 @use "utilities/responsive";
 @use "layout/grid";
@@ -16,6 +17,7 @@
 @use "components/navbar";
 
 //utils
+@use "utilities/border";
 @use "layout/padding";
 @use "layout/margin";
 @use "utilities/opacity";

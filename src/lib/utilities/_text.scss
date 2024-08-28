@@ -10,7 +10,45 @@ $util: (
       "xl": $font-size-xl,
       "xxl": $font-size-xxl
     )
-  )
+  ),
+    "line-height": (
+        "prefix": "lh",
+        "values": (
+        "sm": $base-line-height * 0.75,
+        "md": $base-line-height * 1.25,
+        "lg": $base-line-height * 1.5,
+        "xl" : $base-line-height * 2,
+    )
+  ),
+  "letter-spacing": (
+        "prefix": "ls",
+        "values": (
+        "sm": $base-letter-spacing * 2,
+        "md": $base-letter-spacing * 2.5,
+        "lg": $base-letter-spacing * 3,
+        "xl" : $base-letter-spacing * 3.5,
+        "xxl" : $base-letter-spacing * 4,
+    )
+  ),
+  "word-spacing": (
+        "prefix": "ws",
+        "values": (
+        "sm": $base-word-spacing * 2,
+        "md": $base-word-spacing * 4,
+        "lg": $base-word-spacing * 6,
+        "xl" : $base-word-spacing * 8,
+        "xxl" : $base-word-spacing * 10,
+    )
+  ),
+  "text-align": (
+        "prefix": "ta",
+        "values": (
+        "start": start,
+        "end": end,
+        "center": center,
+        "justify" : justify,
+    )
+  ),
 );
 
 @each $property, $map in $util {

@@ -1,4 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
 /* reset styles */
 * {
   color: inherit;
@@ -5013,6 +5091,10 @@ img {
   border-radius: 10px;
 }
 
+.br-md {
+  border-radius: 20px;
+}
+
 .br-lg {
   border-radius: 40px;
 }
@@ -5027,7 +5109,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #e2e2e2;
 }
 
@@ -5037,7 +5118,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #ffffff;
 }
 .btn-white:hover {
@@ -5050,7 +5130,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #ffffff;
 }
@@ -5064,7 +5143,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #ffffff;
   color: white;
 }
@@ -5079,7 +5157,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #000000;
 }
 .btn-black:hover {
@@ -5092,7 +5169,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #000000;
 }
@@ -5106,7 +5182,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #000000;
   color: #4d4d4d;
 }
@@ -5121,7 +5196,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #ece1df;
 }
 .btn-light:hover {
@@ -5134,7 +5208,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #ece1df;
 }
@@ -5148,7 +5221,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #ece1df;
   color: white;
 }
@@ -5163,7 +5235,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #2f3265;
 }
 .btn-dark:hover {
@@ -5176,7 +5247,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #2f3265;
 }
@@ -5190,7 +5260,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #2f3265;
   color: #bdb870;
 }
@@ -5205,7 +5274,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #0f43a4;
 }
 .btn-primary:hover {
@@ -5218,7 +5286,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #0f43a4;
 }
@@ -5232,7 +5299,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #0f43a4;
   color: #f0bc5c;
 }
@@ -5247,7 +5313,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #3675fb;
 }
 .btn-secondary:hover {
@@ -5260,7 +5325,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #3675fb;
 }
@@ -5274,7 +5338,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #3675fb;
   color: #feeecc;
 }
@@ -5289,7 +5352,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #b05a2a;
 }
 .btn-accent1:hover {
@@ -5302,7 +5364,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #b05a2a;
 }
@@ -5316,7 +5377,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #b05a2a;
   color: #8fc6e4;
 }
@@ -5331,7 +5391,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #cd934d;
 }
 .btn-accent2:hover {
@@ -5344,7 +5403,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #cd934d;
 }
@@ -5358,7 +5416,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #cd934d;
   color: #c4d8ef;
 }
@@ -5373,7 +5430,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #dbbba4;
 }
 .btn-accent3:hover {
@@ -5386,7 +5442,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #dbbba4;
 }
@@ -5400,7 +5455,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #dbbba4;
   color: white;
 }
@@ -5415,7 +5469,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #2788d9;
 }
 .btn-info:hover {
@@ -5428,7 +5481,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #2788d9;
 }
@@ -5442,7 +5494,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #2788d9;
   color: #f0c9a9;
 }
@@ -5457,7 +5508,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #0bb167;
 }
 .btn-success:hover {
@@ -5470,7 +5520,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #0bb167;
 }
@@ -5484,7 +5533,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #0bb167;
   color: #f560a2;
 }
@@ -5499,7 +5547,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #e6cf0a;
 }
 .btn-warning:hover {
@@ -5512,7 +5559,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #e6cf0a;
 }
@@ -5526,7 +5572,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #e6cf0a;
   color: #8f9afa;
 }
@@ -5541,7 +5586,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #f71b03;
 }
 .btn-danger:hover {
@@ -5554,7 +5598,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #f71b03;
 }
@@ -5568,7 +5611,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #f71b03;
   color: #95f3fe;
 }
@@ -5583,7 +5625,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: rgba(124, 0, 31, 0.9843137255);
 }
 .btn-error:hover {
@@ -5596,7 +5637,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid rgba(124, 0, 31, 0.9843137255);
 }
@@ -5610,7 +5650,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: rgba(124, 0, 31, 0.9843137255);
   color: rgba(22, 255, 197, 0.9843137255);
 }
@@ -5625,7 +5664,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #1919e6;
 }
 .btn-blue:hover {
@@ -5638,7 +5676,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #1919e6;
 }
@@ -5652,7 +5689,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #1919e6;
   color: #f5f5a3;
 }
@@ -5667,7 +5703,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #e61919;
 }
 .btn-red:hover {
@@ -5680,7 +5715,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #e61919;
 }
@@ -5694,7 +5728,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #e61919;
   color: #a3f5f5;
 }
@@ -5709,7 +5742,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #e6e619;
 }
 .btn-yellow:hover {
@@ -5722,7 +5754,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #e6e619;
 }
@@ -5736,7 +5767,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #e6e619;
   color: #a3a3f5;
 }
@@ -5751,7 +5781,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #19e635;
 }
 .btn-green:hover {
@@ -5764,7 +5793,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #19e635;
 }
@@ -5778,7 +5806,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #19e635;
   color: #f5a3ea;
 }
@@ -5793,7 +5820,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #ffa600;
 }
 .btn-orange:hover {
@@ -5806,7 +5832,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #ffa600;
 }
@@ -5820,7 +5845,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #ffa600;
   color: #99bdff;
 }
@@ -5835,7 +5859,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #9900ff;
 }
 .btn-purple:hover {
@@ -5848,7 +5871,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #9900ff;
 }
@@ -5862,7 +5884,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #9900ff;
   color: #c2ff99;
 }
@@ -5877,7 +5898,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #808080;
 }
 .btn-gray:hover {
@@ -5890,7 +5910,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #808080;
 }
@@ -5904,7 +5923,6 @@ img {
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
   background-color: #808080;
   color: #cdcdcd;
 }
@@ -6318,6 +6336,78 @@ img {
 
 .font-xxl {
   font-size: 3rem;
+}
+
+.lh-sm {
+  line-height: 0.75;
+}
+
+.lh-md {
+  line-height: 1.25;
+}
+
+.lh-lg {
+  line-height: 1.5;
+}
+
+.lh-xl {
+  line-height: 2;
+}
+
+.ls-sm {
+  letter-spacing: 3px;
+}
+
+.ls-md {
+  letter-spacing: 3.75px;
+}
+
+.ls-lg {
+  letter-spacing: 4.5px;
+}
+
+.ls-xl {
+  letter-spacing: 5.25px;
+}
+
+.ls-xxl {
+  letter-spacing: 6px;
+}
+
+.ws-sm {
+  word-spacing: 6px;
+}
+
+.ws-md {
+  word-spacing: 12px;
+}
+
+.ws-lg {
+  word-spacing: 18px;
+}
+
+.ws-xl {
+  word-spacing: 24px;
+}
+
+.ws-xxl {
+  word-spacing: 30px;
+}
+
+.ta-start {
+  text-align: start;
+}
+
+.ta-end {
+  text-align: end;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-justify {
+  text-align: justify;
 }
 
 .display-n {
