@@ -6339,19 +6339,19 @@ img {
 }
 
 .lh-sm {
-  line-height: 0.75;
+  line-height: 1.125;
 }
 
 .lh-md {
-  line-height: 1.25;
+  line-height: 1.875;
 }
 
 .lh-lg {
-  line-height: 1.5;
+  line-height: 2.25;
 }
 
 .lh-xl {
-  line-height: 2;
+  line-height: 3;
 }
 
 .ls-sm {
